@@ -5,6 +5,7 @@ USER root
 
 # Install required packages for Alpine Linux
 RUN apk add --no-cache python3 py3-pip curl py3-msgpack ffmpeg imagemagick font-noto
+RUN npm install -g cheerio axios lodash moment
 
 # Create the directory structure for fonts if it doesn't exist
 RUN mkdir -p /usr/share/fonts/truetype
